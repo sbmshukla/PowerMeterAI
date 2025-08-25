@@ -7,7 +7,7 @@ import time
 st.sidebar.header("Predict Energy Consumption")
 
 # Model selection
-model_choice = st.sidebar.selectbox("Choose Model", ["Linear Regression", "ElasticNetCV"])
+model_choice = st.sidebar.selectbox("Choose Model", ["Linear Regression (99% Over-fit)", "ElasticNetCV (Adjusted For New Data)"])
 
 # User input form
 with st.sidebar.form(key="energy_form"):
